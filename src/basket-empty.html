@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Купон"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page _basket-empty">
+				<div class="page__popups popups-page">
+					<div class="popups-page__container">
+						<div class="popups-page__content">
+							<div class="breadcrambs">
+								<div class="breadcrambs__container">
+									<ul>
+										<li><a href="#">Каталог</a></li>
+										<li><a href="#">Автомобильные подъемники</a></li>
+										<li><span>Корзина</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="popups-page__body">
+
+								<!--Коризина полностью очищена. Отменить?-->
+								<div class="popups-page__added-remove">
+									<div data-close class="popups-page__close _icon-close"></div>
+									<div class="popups-page__text-red _icon-check">
+										<div>
+											Коризина полностью очищена. <span>Отменить?</span>
+										</div>
+									</div>
+								</div>
+								<!---->
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="page__basket basket">
+					<div class="basket__container">
+						<div class="block-basket__title title">Корзина</div>
+						<div class="block-basket__subtitle">Ваша корзина пока пуста.</div>
+
+						<!--Коризина полностью очищена. Отменить? мобильная версия-->
+						<div class="popups-page__added-remove-mob">
+							<div data-close class="popups-page__close _icon-close"></div>
+							<div class="popups-page__text-red _icon-check">
+								<div>
+									Коризина полностью очищена.<br>
+									<span>Отменить?</span>
+								</div>
+							</div>
+						</div>
+						<!---->
+
+						<a href="#" class="block-basket__button-empty">Вернуться в магазина</a>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			<div class="favorites-comparison">
+				<a href="#" class="favorites-comparison__block">
+					<div class="favorites-comparison__icon _icon-comparison"><span>2</span></div>
+				</a>
+				<a href="#" class="favorites-comparison__block">
+					<div class="favorites-comparison__icon _icon-favorites"><span>3</span></div>
+				</a>
+			</div>
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

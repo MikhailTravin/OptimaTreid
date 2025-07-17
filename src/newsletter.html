@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Рассылка"
+	})
+	<body>
+		<div class="wrapper">
+			<main class="page page-newsletter">
+				<section class="page__newsletter newsletter">
+					<div class="newsletter__content">
+						<a href="#" class="newsletter__logo">
+							<img src="../img/icons/logo.svg" alt="">
+						</a>
+						<div class="newsletter__title">
+							Новый заказ
+						</div>
+						<div class="newsletter__info">
+							<div class="newsletter__info-text">Номер заказа:<span>174523</span></div>
+							<div class="newsletter__info-text">ДАТА:<span>17.08.22</span></div>
+						</div>
+						<div class="newsletter__table newsletter-table">
+							<div class="newsletter-table__desc desc-newsletter-table">
+								<div class="desc-newsletter-table__product">Товар</div>
+								<div class="desc-newsletter-table__quantity">Кол-во</div>
+								<div class="desc-newsletter-table__price">Цена</div>
+							</div>
+							<div class="newsletter-table__body">
+								<div class="newsletter-table__column-one">
+									<div class="newsletter-table__item">
+										<div class="newsletter-table__name-one">Kraftwell KRW-BG250
+											Заточной станок 250мм</div>
+										<div class="newsletter-table__quantity-column-one">1 шт.</div>
+										<div class="newsletter-table__price-one">22 800 руб.</div>
+									</div>
+								</div>
+								<div class="newsletter-table__column">
+									<div class="newsletter-table__item">
+										<div class="newsletter-table__name">Подытог</div>
+										<div class="newsletter-table__price">22 800 руб.</div>
+									</div>
+								</div>
+								<div class="newsletter-table__column">
+									<div class="newsletter-table__item">
+										<div class="newsletter-table__name">Доставка</div>
+										<div class="newsletter-table__price">Самовывоз (в Санкт-Петербурге)</div>
+									</div>
+								</div>
+								<div class="newsletter-table__column">
+									<div class="newsletter-table__item">
+										<div class="newsletter-table__name">Способ оплаты</div>
+										<div class="newsletter-table__price">Оплата по счету для юр. лиц - ИП, ООО</div>
+									</div>
+								</div>
+								<div class="newsletter-table__column">
+									<div class="newsletter-table__item">
+										<div class="newsletter-table__name">Всего</div>
+										<div class="newsletter-table__total">22 800 руб.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="newsletter__address address-newsletter">
+							<div class="address-newsletter__title">Платежный адрес</div>
+							<div class="address-newsletter__body">
+								<div class="address-newsletter__name">Павел</div>
+								<div class="address-newsletter__name">Санкт - Петербург</div>
+								<a href="#" class="address-newsletter__tel">+7 (960) 257-83-69</a>
+								<a href="#" class="address-newsletter__email">modemist24@inbox.ru</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

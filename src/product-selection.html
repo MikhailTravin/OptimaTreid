@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Выбор товара"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__popups popups-page">
+				<div class="popups-page__container">
+					<div class="popups-page__content">
+						<div class="breadcrambs">
+							<div class="breadcrambs__container">
+								<ul>
+									<li><a href="#">Каталог</a></li>
+									<li><a href="#">Автомобильные подъемники</a></li>
+									<li><span>Двухстоечные подъемники</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="popups-page__body">
+
+							<!-- Товар добавлен в корзину
+								<div class="popups-page__added-remove">
+									<div data-close class="popups-page__close _icon-close"></div>
+									<div class="popups-page__text _icon-check">
+										Товар добавлен <span> в корзину</span>
+									</div>
+								</div>
+								-->
+
+							<!-- Товар добавлен в избранное
+								<div class="popups-page__added-remove">
+									<div data-close class="popups-page__close _icon-close"></div>
+									<div class="popups-page__text _icon-check">
+										Товар добавлен <span> в избранное</span>
+									</div>
+								</div>
+								-->
+
+							<!-- Товар удален из избранное
+								<div class="popups-page__added-remove">
+									<div data-close class="popups-page__close _icon-close"></div>
+									<div class="popups-page__text _icon-check">
+										Товар удален из избранного
+									</div>
+								</div>
+								-->
+
+							<!-- Товар добавлен в сравнение
+								<div class="popups-page__added-remove">
+									<div data-close class="popups-page__close _icon-close"></div>
+									<div class="popups-page__text _icon-check">
+										Товар добавлен <span> в сравнение</span>
+									</div>
+								</div>
+								-->
+
+							<!-- Товар удален из избранное
+								<div class="popups-page__added-remove">
+									<div data-close class="popups-page__close _icon-close"></div>
+									<div class="popups-page__text _icon-check">
+										Товар удален из сравнения
+									</div>
+								</div>
+								-->
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__product-selection product-selection">
+				<div class="product-selection__container">
+					<div class="product-selection__title title">Двухстоечные подъемники</div>
+					<div class="product-selection__sorting sorting-product">
+						<div class="sorting-product__text">Отображение 1–24 из 198 результатов</div>
+						<div class="sorting-product__sort">
+							<span>Цены по:</span>
+							<div class="sorting-product__block">
+								<div class="sorting-product__inputs">
+									<label class="sorting-product__input">
+										<input checked class="sorting-product__inp" type="radio" value="" name="form[]">
+										<div class="sorting-product__checked">
+											Возростанию
+										</div>
+									</label>
+									<label class="sorting-product__input">
+										<input class="sorting-product__inp" type="radio" value="" name="form[]">
+										<div class="sorting-product__checked">
+											Убыванию
+										</div>
+									</label>
+								</div>
+								<div class="sorting-product__inputs">
+									<label class="sorting-product__input">
+										<input checked class="sorting-product__inp" type="radio" value="" name="form[]">
+										<div class="sorting-product__checked">
+											Популярность
+										</div>
+									</label>
+									<label class="sorting-product__input">
+										<input class="sorting-product__inp" type="radio" value="" name="form[]">
+										<div class="sorting-product__checked">
+											Новизна
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-selection__select select-product">
+						<!--ДОБАВИЛ только обертку select-product__top-->
+						<div class="select-product__top">
+							<div class="select-product__one">
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										С нижней синхронизацией
+									</a>
+								</div>
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										Подъемники Sivik
+									</a>
+								</div>
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										Подъемники TECO
+									</a>
+								</div>
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										Подъемники KraftWell
+									</a>
+								</div>
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										С верхней синхронизацией
+									</a>
+								</div>
+							</div>
+							<div class="select-product__two">
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										С нижней синхронизацией
+									</a>
+								</div>
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										Подъемники Launch
+									</a>
+								</div>
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										Подъемники Peak
+									</a>
+								</div>
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										С нижней синхронизацией
+									</a>
+								</div>
+								<div class="select-product__link">
+									<a href="#" class="select-product__item">
+										Грузоподъемность 4 тонны
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--ДОБАВИЛ-->
+
+						<!--ДОБАВИЛ полностью блок-->
+						<div class="select-product__bottom">
+							<div class="select-product__content">
+								<div class="select-product__image">
+									<img class="select-product__bg" src="../img/constructor/bg-1.png" alt="">
+									<img class="select-product__bg-mob" src="../img/constructor/bg-mob.png" alt="">
+								</div>
+								<div class="select-product__left">
+									<div data-da=".select-product__content, 479.98, first"
+										class="select-product__title">
+										Конструктор верстаков Garopt</div>
+									<a href="#" class="select-product__button">Открыть</a>
+								</div>
+								<div data-da=".select-product__left, 479.98" class="select-product__right">
+									<div class="select-product__column">
+										<div class="select-product__text">Цвет</div>
+									</div>
+									<div class="select-product__column">
+										<div class="select-product__text">Ящики</div>
+									</div>
+									<div class="select-product__column">
+										<div class="select-product__text">Подстветка</div>
+									</div>
+									<div class="select-product__column">
+										<div class="select-product__text">Аксессуары</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--ДОБАВИЛ-->
+					</div>
+					<div class="product-selection__products-block">
+						<div class="product-selection__products">
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-5.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+									<div class="products__hit">хит</div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions products__actions-sale">
+										<div class="products__sum">от 505 000 ₽</div>
+										<div class="products__sale-popup">
+											<a href="#" data-popup="#sale" class="products__sale-popup-text">Цена без
+												скидки 555 500 ₽</a>
+											<a href="#" data-popup="#sale"
+												class="products__tippy top-product-cart__tippy _icon-i"></a>
+										</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-6.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+									<div class="products__power _icon-power">220v</div>
+									<div class="products__reserve">В резерве</div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+
+							<!--Товар удален из избранное-->
+							<div class="popups-page__added-remove-mob">
+								<div data-close class="popups-page__close _icon-close"></div>
+								<div class="popups-page__text _icon-check">
+									Товар удален из сравнения
+								</div>
+							</div>
+							<!---->
+
+
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-image-1.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+									<div class="products__power _icon-power">380v</div>
+									<div class="products__stock">В наличии</div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/similar-product-3.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+									<div class="products__way">В пути</div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+
+							<!--Товар добавлен в сравнение-->
+							<div class="popups-page__added-remove-mob">
+								<div data-close class="popups-page__close _icon-close"></div>
+								<div class="popups-page__text _icon-check">
+									Товар добавлен <span> в сравнение</span>
+								</div>
+							</div>
+							<!---->
+
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-5.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-6.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+									<div class="products__hit">хит</div>
+									<div class="products__sale">Скидка</div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+
+							<!--Товар удален из избранное-->
+							<div class="popups-page__added-remove-mob">
+								<div data-close class="popups-page__close _icon-close"></div>
+								<div class="popups-page__text _icon-check">
+									Товар удален из избранного
+								</div>
+							</div>
+							<!---->
+
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-image-1.png" alt=""></a>
+									<div class="products__favorites _icon-favorites _active"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/similar-product-3.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+
+							<!--Товар добавлен в избранное мобильная версия-->
+							<div class="popups-page__added-remove-mob">
+								<div data-close class="popups-page__close _icon-close"></div>
+								<div class="popups-page__text _icon-check">
+									Товар добавлен <span> в избранное</span>
+								</div>
+							</div>
+							<!---->
+
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-5.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+									<div class="products__hit">хит</div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-6.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+
+							<!--Товар добавлен в корзину мобильная версия-->
+							<div class="popups-page__added-remove-mob">
+								<div data-close class="popups-page__close _icon-close"></div>
+								<div class="popups-page__text _icon-check">
+									Товар добавлен <span> в корзину</span>
+								</div>
+							</div>
+							<!---->
+
+							<div class="products__column">
+
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-image-1.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up _active">Добавлен в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/similar-product-3.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-5.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+									<div class="products__hit">хит</div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-6.png" alt=""></a>
+									<div class="products__favorites _icon-favorites _active"></div>
+									<div class="products__comparison _icon-comparison _active"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-image-1.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавлен в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/similar-product-3.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-5.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+									<div class="products__hit">хит</div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-6.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/product-image-1.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавлен в корзину</a>
+								</div>
+							</div>
+							<div class="products__column">
+								<div class="products__image">
+									<a href="#"><img src="../img/product/similar-product-3.png" alt=""></a>
+									<div class="products__favorites _icon-favorites"></div>
+									<div class="products__comparison _icon-comparison"></div>
+								</div>
+								<div class="products__desc">
+									<div class="products__desc-title">КМП А-KA 20×170/20 К 20х170 мм для крепления
+										подъемников – 12 шт.</div>
+									<div class="products__actions">
+										<div class="products__price">50 833 ₽</div>
+										<a href="#" data-popup="#installment-plan"><span>x6 мес</span></a>
+										<a href="#" data-popup="#installment-plan"
+											class="products__tippy top-product-cart__tippy _icon-i"></a>
+										<div class="products__sum">305 000 ₽</div>
+									</div>
+									<a href="#" class="products__button-up">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<button class="product-selection__showmore">
+							Показать еще товары
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="page__banner banner banner-product-selection">
+				<div class="banner__container">
+					<div class="banner__body">
+						<img class="banner__image banner-image" src="../img/banner-1.png" alt="">
+						<img class="banner__image-mob" src="../img/banner-mob-1.png" alt="">
+						<div class="banner__text">
+							<div class="banner__bank">
+								<img src="../img/icons/tinkoff.svg" alt="">
+							</div>
+							<div class="banner__title">
+								РАССРОЧКА<br>
+								0-0-6
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__product-selection-cart product-selection-cart">
+				<div class="product-selection-cart__container center-product-cart">
+					<div class="center-product-cart__bottom center-selection-cart">
+						<div class="center-product-cart__delivery">
+							<img src="../img/delivery-image.png" alt="">
+							<div class="center-product-cart__text">
+								<div class="center-product-cart__desc">
+									<div class="center-product-cart__icon _icon-delivery"></div>
+									<div class="center-product-cart__title">Доставка</div>
+									<div class="center-product-cart__subtitle">У нас вы можете рассчитать<br>
+										доставку в ваш город</div>
+								</div>
+								<div class="center-product-cart__buttons">
+									<a href="#" class="center-product-cart__button _icon-calculator">Рассчитать</a>
+								</div>
+							</div>
+						</div>
+						<div class="center-product-cart__coupon">
+							<img src="../img/coupon-image.png" alt="">
+							<div class="center-product-cart__text">
+								<div class="center-product-cart__desc">
+									<div class="center-product-cart__icon _icon-coupon"></div>
+									<div class="center-product-cart__title">Внимание!</div>
+									<div class="center-product-cart__subtitle">Вы получили купон на скидку.</div>
+								</div>
+								<div class="center-product-cart__buttons">
+									<a id="buttomMore" href="#" class="center-product-cart__button">Подробнее</a>
+									<input readonly id="input" value="XA/74251"
+										class="center-product-cart__coupon-text">
+									<button id="copy">Скопировать</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__coupon-mob coupon-mob-selection">
+				<div class="__container">
+					<div class="center-product-cart__coupon-mob">
+						<img src="../img/coupon-image-mob.png" alt="">
+						<div class="center-product-cart__text">
+							<div class="center-product-cart__desc">
+								<div class="center-product-cart__icon _icon-coupon"></div>
+								<div class="center-product-cart__title">Внимание!</div>
+								<div class="center-product-cart__subtitle">Вы получили купон на скидку.</div>
+							</div>
+							<div class="center-product-cart__buttons">
+								<a href="#" class="center-product-cart__button">Подробнее</a>
+								<input id="inputmob" value="XA/74251" class="center-product-cart__coupon-text">
+								<button id="copymob">Скопировать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+		<div class="favorites-comparison">
+			<a href="#" class="favorites-comparison__block">
+				<div class="favorites-comparison__icon _icon-comparison"><span>2</span></div>
+			</a>
+			<a href="#" class="favorites-comparison__block">
+				<div class="favorites-comparison__icon _icon-favorites"><span>3</span></div>
+			</a>
+		</div>
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Оплата"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<form action="#" class="page__form-payment">
+					<section class="page__payment payment">
+						<div class="payment__container">
+							<div class="payment__title title">Оплата</div>
+							<div class="payment__form">
+								<div class="payment__error form-review__error _icon-warning-filled">Неверный адрес эл. почты для выставления счета</div>
+								<div class="payment__column">
+									<input data-validate data-required="email" autocomplete="off" type="email" name="form[]" placeholder="Ваш E-mail (*не публекуется):" class="payment__input-one">
+									<input autocomplete="off" type="name" name="form[]" placeholder="Ваше Имя:" class="payment__input-one">
+									<input autocomplete="off" type="city" name="form[]" placeholder="Город:" class="payment__input-one">
+								</div>
+								<div class="payment__column">
+									<input autocomplete="off" type="address" name="form[]" placeholder="Адрес доставки:" class="payment__input-two">
+									<!--
+									<select name="form[]" class="form">
+										<option value="1" selected>Россия</option>
+										<option value="2">Россия</option>
+										<option value="3">Россия</option>
+										<option value="4">Россия</option>
+									</select>
+									-->
+								</div>
+								<div class="payment__column">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Ф.И.О (Полностью):" class="payment__input">
+								</div>
+								<div class="payment__column">
+									<textarea placeholder="Комментарий:" class="payment__textarea"></textarea>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="page__basket basket">
+						<div class="basket__container">
+							<div class="basket__content payment-content">
+								<div class="basket__title title">Ваш заказ</div>
+								<div class="basket__desc desc-basket">
+									<div class="desc-basket__product">Товар</div>
+									<div class="desc-basket__quantity">Кол-во</div>
+									<div class="desc-basket__total">Итого</div>
+								</div>
+								<div class="basket__body">
+									<div class="basket__column">
+										<div class="basket__item">
+											<div class="basket__image payment-image">
+												<img src="../img/catalog/catalog-image-3.png" alt="">
+												<span>Nordberg N4121B-4T двухстоечный подъемник на 4т 380В</span>
+											</div>
+											<div class="basket__text payment-text">
+												Nordberg N4121B-4T двухстоечный подъемник на 4т 380В
+											</div>
+											<div class="basket__quantity">
+												<span>Кол-во</span>
+												1
+											</div>
+											<div class="basket__total payment-total"><span>Итого</span>265 000 ₽</div>
+										</div>
+									</div>
+									<div class="basket__column">
+										<div class="basket__item">
+											<div class="basket__image payment-image">
+												<img src="../img/catalog/catalog-image-3.png" alt="">
+												<span>Nordberg N4121B-4T двухстоечный подъемник на 4т 380В</span>
+											</div>
+											<div class="basket__text payment-text">
+												Nordberg N4121B-4T двухстоечный подъемник на 4т 380В
+											</div>
+											<div class="basket__quantity">
+												<span>Кол-во</span>
+												1
+											</div>
+											<div class="basket__total payment-total"><span>Итого</span>265 000 ₽</div>
+										</div>
+									</div>
+									<div class="basket__column">
+										<div class="basket__item">
+											<div class="basket__image payment-image">
+												<img src="../img/catalog/catalog-image-3.png" alt="">
+												<span>Nordberg N4121B-4T двухстоечный подъемник на 4т 380В</span>
+											</div>
+											<div class="basket__text payment-text">
+												Nordberg N4121B-4T двухстоечный подъемник на 4т 380В
+											</div>
+											<div class="basket__quantity">
+												<span>Кол-во</span>
+												1
+											</div>
+											<div class="basket__total payment-total"><span>Итого</span>265 000 ₽</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket__payment">
+									<div class="basket__sum payment-sum"><span>Подытог: </span>1 017 603 ₽</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="page__delivery-options delivery-options">
+						<div class="delivery-options__container">
+							<div class="delivery-options__title">Варианты доставки</div>
+							<div class="delivery-options__body">
+								<label class="delivery-options__form">
+									<input checked class="delivery-options__input" type="radio" value="" name="form[1]">
+									<div class="delivery-options__checked _icon-check">
+										Доставка по городу
+									</div>
+								</label>
+								<label class="delivery-options__form delivery-city">
+									<input class="delivery-options__input" type="radio" value="" name="form[1]">
+									<div class="delivery-options__checked _icon-check">
+										Доставка по городу
+										<div class="delivery-options__sum">
+											(заказ <30 000 руб.):
+											<span>490 РУБ.</span>
+										</div>
+									</div>
+								</label>
+								<label class="delivery-options__form">
+									<input class="delivery-options__input" type="radio" value="" name="form[1]">
+									<div class="delivery-options__checked _icon-check">
+										Самовывоз
+										<div class="delivery-options__sum">
+											(в Санкт-Петербурге)
+										</div>
+									</div>
+								</label>
+								<label class="delivery-options__form last-delivery-to-transport">
+									<input class="delivery-options__input" type="radio" value="" name="form[1]">
+									<div class="delivery-options__checked _icon-check">
+										Отвезти на транспортную
+									</div>
+								</label>
+								<div class="delivery-options__transport delivery-transport">
+									<label class="delivery-transport__form">
+										<input checked class="delivery-transport__input" type="radio" value="" name="form[2]">
+										<div class="delivery-transport__checked _icon-check">
+											<div class="delivery-transport__text">ПЭК</div>
+											<img src="../img/icons/transport-form-1.svg" alt="">
+										</div>
+									</label>
+									<label class="delivery-transport__form">
+										<input class="delivery-transport__input" type="radio" value="" name="form[2]">
+										<div class="delivery-transport__checked _icon-check">
+											<div class="delivery-transport__text">Деловые Линии</div>
+											<img src="../img/icons/transport-form-2.svg" alt="">
+										</div>
+									</label>
+									<label class="delivery-transport__form">
+										<input class="delivery-transport__input" type="radio" value="" name="form[2]">
+										<div class="delivery-transport__checked _icon-check">
+											<div class="delivery-transport__text">Энергия</div>
+											<img src="../img/icons/transport-form-3.svg" alt="">
+										</div>
+									</label>
+									<label class="delivery-transport__form">
+										<input class="delivery-transport__input" type="radio" value="" name="form[2]">
+										<div class="delivery-transport__checked _icon-check">
+											<div class="delivery-transport__text">СДЭК </div>
+											<img src="../img/icons/transport-form-4.svg" alt="">
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="delivery-options__transport-forms">
+								<div class="transport-forms__input">
+									<input autocomplete="off" type="text" name="form[3]" placeholder="Серия паспорта:">
+								</div>
+								<div class="transport-forms__input">
+									<input autocomplete="off" type="text" name="form[3]" placeholder="Номер паспорта:">
+								</div>
+							</div>
+							<div class="delivery-options__total">
+								<div class="total__text">Итого: </div>
+								<div class="total__sum">
+									1 017 603 ₽
+									<span class="total__subsum">+ 490 ₽</span>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="page__payment-methods payment-methods">
+						<div class="payment-methods__container">
+							<div class="payment-methods__title">Способы оплаты</div>
+							<div class="payment-methods__body">
+								<div class="payment-methods__top">
+									<label class="payment-methods__form-payment">
+										<input checked class="payment-methods__input" type="radio" value="" name="form[]">
+										<div class="payment-methods__checked">
+											<div class="payment-methods__check _icon-check"></div>
+											<div class="payment-methods__label label-credit-card _icon-credit-card">
+												<div class="payment-methods__img">
+													<div class="payment-methods__img-col">
+														<div class="payment-methods__img-item">
+															<img src="../img/icons/visa.svg" alt="">
+														</div>
+													</div>
+													<div class="payment-methods__img-col">
+														<div class="payment-methods__img-item">
+															<img src="../img/icons/mastercard.svg" alt="">
+														</div>
+													</div>
+													<div class="payment-methods__img-col">
+														<div class="payment-methods__img-item">
+															<img src="../img/icons/tinkoff-payment.svg" alt="">
+														</div>
+													</div>
+													<div class="payment-methods__img-col">
+														<div class="payment-methods__img-item">
+															<img src="../img/icons/ypay.svg" alt="">
+														</div>
+													</div>
+													<div class="payment-methods__img-col">
+														<div class="payment-methods__img-item">
+															<img src="../img/icons/sbp.svg" alt="">
+														</div>
+													</div>
+													<div class="payment-methods__img-col">
+														<div class="payment-methods__img-item">
+															<img src="../img/icons/credit-card.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="payment-methods__text">
+													Онлайн оплата
+												</div>
+											</div>
+										</div>
+									</label>
+									<div class="payment-methods__top-forms">
+										<label class="payment-methods__form">
+											<input class="payment-methods__input" type="radio" value="" name="form[]">
+											<div class="payment-methods__checked">
+												<div class="payment-methods__check _icon-check"></div>
+												<div class="payment-methods__label label-money-hand _icon-money-hand">
+													<div class="payment-methods__text">
+														Наличными при
+														получении<br>
+														<span>(только в Санкт-Петербурге и ЛО)</span>
+													</div>
+												</div>
+											</div>
+										</label>
+										<label class="payment-methods__form">
+											<input class="payment-methods__input" type="radio" value="" name="form[]">
+											<div class="payment-methods__checked">
+												<div class="payment-methods__check _icon-check"></div>
+												<div class="payment-methods__label label-list-2 _icon-list">
+													<div class="payment-methods__text">
+														Оформить в лизинг
+													</div>
+												</div>
+											</div>
+										</label>
+										<label class="payment-methods__form">
+											<input class="payment-methods__input" type="radio" value="" name="form[]">
+											<div class="payment-methods__checked">
+												<div class="payment-methods__check _icon-check"></div>
+												<div class="payment-methods__label label-list _icon-list">
+													<div class="payment-methods__text">
+														Оплата по счету для
+														юр.лиц - ИП, ООО
+													</div>
+												</div>
+											</div>
+										</label>
+										<label class="payment-methods__form">
+											<input class="payment-methods__input" type="radio" value="" name="form[]">
+											<div class="payment-methods__checked">
+												<div class="payment-methods__check _icon-check"></div>
+												<div class="payment-methods__label">
+													<img class="payment-methods__image" src="../img/icons/logo-bank-sberbank.svg" alt="">
+													<div class="payment-methods__text">
+														Кредит сбербанк
+													</div>
+												</div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<label class="payment-methods__form">
+									<input class="payment-methods__input" type="radio" value="" name="form[]">
+									<div class="payment-methods__checked">
+										<div class="payment-methods__check _icon-check"></div>
+										<div class="payment-methods__label">
+											<img class="payment-methods__image" src="../img/icons/logo-bank-sberbank.svg" alt="">
+											<div class="payment-methods__text">
+												Рассрочка
+											</div>
+										</div>
+									</div>
+								</label>
+								<div class="payment-methods__form buttons">
+									<div class="payment-methods__buttons">
+										<div class="payment-methods__button-pay">
+											<input id="buttonPayInput" class="button-pay__input" type="checkbox" value="" name="form[]">
+											<label for="buttonPayInput" class="button-pay__label">
+												Оплатить позже
+											</label>
+										</div>
+										<button type="submit" class="payment-methods__button-send">Отправить</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</form>
+			</main>
+			@@include('html/_footer.htm',{})
+			<div class="favorites-comparison">
+				<a href="#" class="favorites-comparison__block">
+					<div class="favorites-comparison__icon _icon-comparison"><span>2</span></div>
+				</a>
+				<a href="#" class="favorites-comparison__block">
+					<div class="favorites-comparison__icon _icon-favorites"><span>3</span></div>
+				</a>
+			</div>
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

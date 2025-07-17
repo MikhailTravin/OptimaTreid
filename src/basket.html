@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Корзина"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page _basket">
+				<div class="breadcrambs">
+					<div class="breadcrambs__container">
+						<ul>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Автомобильные подъемники</a></li>
+							<li><span>Корзина</span></li>
+						</ul>
+					</div>
+				</div>
+				<section class="page__basket basket">
+					<div class="basket__container">
+						<div class="basket__content">
+							<div class="basket__block block-basket">
+								<div class="block-basket__title title">Корзина</div>
+								<div class="block-basket__buttons">
+									<a href="#" class="block-basket__button _icon-bill"><span>Создать товарный чек</span></a>
+									<a href="#" class="block-basket__button _icon-offer-basket"><span>Создать коммерческое предложение</span></a>
+								</div>
+							</div>
+							<div class="basket__desc desc-basket">
+								<div class="desc-basket__product">Товар</div>
+								<div class="desc-basket__price">Цена</div>
+								<div class="desc-basket__quantity">Кол-во</div>
+								<div class="desc-basket__total">Итого</div>
+								<div class="desc-basket__remove"></div>
+							</div>
+							<div class="basket__body">
+								<div class="basket__column">
+									<div class="basket__item">
+										<div class="basket__image">
+											<img src="../img/catalog/catalog-image-3.png" alt>
+										</div>
+										<div class="basket__text">
+											Nordberg N4121B-4T двухстоечный подъемник на 4т 380В
+										</div>
+										<div class="basket__price"><span>Цена</span>265 000 ₽</div>
+										<div class="basket__quantity-basket">
+											<div class="quantity quantity-basket-content">
+												<button type="button" class="quantity__button quantity__button_minus quantity-basket__button quantity-basket__button_minus"></button>
+												<div class="quantity__input quantity-basket__input">
+													<input autocomplete="off" type="text" name="form[]" value="1">
+												</div>
+												<button type="button" class="quantity__button quantity__button_plus quantity-basket__button quantity-basket__button_plus"></button>
+											</div>
+										</div>
+										<div class="basket__total"><span>Итого</span>265 000 ₽</div>
+										<button class="basket__remove _icon-remove"><span>Удалить</span></button>
+									</div>
+								</div>
+								<div class="basket__column">
+									<div class="basket__item">
+										<div class="basket__image">
+											<img src="../img/catalog/catalog-image-3.png" alt>
+										</div>
+										<div class="basket__text">
+											Nordberg N4121B-4T двухстоечный подъемник на 4т 380В
+										</div>
+										<div class="basket__price"><span>Цена</span>265 000 ₽</div>
+										<div class="basket__quantity-basket">
+											<div class="quantity quantity-basket-content">
+												<button type="button" class="quantity__button quantity__button_minus quantity-basket__button quantity-basket__button_minus"></button>
+												<div class="quantity__input quantity-basket__input">
+													<input autocomplete="off" type="text" name="form[]" value="1">
+												</div>
+												<button type="button" class="quantity__button quantity__button_plus quantity-basket__button quantity-basket__button_plus"></button>
+											</div>
+
+										</div>
+										<div class="basket__total"><span>Итого</span>265 000 ₽</div>
+										<button class="basket__remove _icon-remove"><span>Удалить</span></button>
+									</div>
+								</div>
+								<div class="basket__column">
+									<div class="basket__item">
+										<div class="basket__image">
+											<img src="../img/catalog/catalog-image-3.png" alt>
+										</div>
+										<div class="basket__text">
+											Nordberg N4121B-4T двухстоечный подъемник на 4т 380В
+										</div>
+										<div class="basket__price"><span>Цена</span>265 000 ₽</div>
+										<div class="basket__quantity-basket">
+											<div class="quantity quantity-basket-content">
+												<button type="button" class="quantity__button quantity__button_minus quantity-basket__button quantity-basket__button_minus"></button>
+												<div class="quantity__input quantity-basket__input">
+													<input autocomplete="off" type="text" name="form[]" value="1">
+												</div>
+												<button type="button" class="quantity__button quantity__button_plus quantity-basket__button quantity-basket__button_plus"></button>
+											</div>
+
+										</div>
+										<div class="basket__total"><span>Итого</span>265 000 ₽</div>
+										<button class="basket__remove _icon-remove"><span>Удалить</span></button>
+									</div>
+								</div>
+							</div>
+							<div class="basket__buttons">
+								<a href="#" class="basket__button-checkout">Оформить заказ</a>
+								<a href="#" class="basket__button-credit">В кредит</a>
+							</div>
+							<!--ДОБАВИЛ К КЛАССУ basket__payment АТРИБУТ data-da=".basket__basket-checkout, 767.98"-->
+							<div data-da=".basket__basket-checkout, 767.98" class="basket__payment">
+								<div class="basket__sum"><span>Сумма заказа: </span>1 017 603 ₽</div>
+								<div class="basket__right">
+									<a href="#" class="basket__update _icon-update">Обновить корзину</a>
+									<button class="basket__clear _icon-close">Очистить заказ</button>
+								</div>
+							</div>
+							<!--ДОБАВИЛ-->
+						</div>
+						<!--ДОБАВИЛ-->
+						<div class="basket__basket-checkout basket-checkout"> 
+							<div class="basket-checkout__checkbox checkbox">
+								<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="checkbox__label _icon-check">
+									Оформить без оплаты
+								</label>
+							</div>
+							<div data-tabs class="basket-checkout__tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title">Физ. лицо</button>
+									<button type="button" class="tabs__title _tab-active">Юр. лицо</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body">
+										<form action="#" class="tabs__form form-tabs">
+											<div class="form-tabs__content">
+												<div class="form-tabs__inputs">
+													<div class="form-tabs__input">
+														<input data-required autocomplete="off" type="text" name="form[]" placeholder="Фио*">
+													</div>
+													<div class="form-tabs__input">
+														<input data-required autocomplete="off" type="text" name="form[]" placeholder="Номер телефона*:">
+													</div>
+													<div class="form-tabs__input">
+														<input data-required data-validate autocomplete="off" type="text" name="form[]" placeholder="E-mail*:">
+													</div>
+													<div class="form-tabs__input">
+														<input autocomplete="off" type="text" name="form[]" placeholder="Адрес:">
+													</div>
+													<div class="form-tabs__input">
+														<textarea placeholder="Примечание:"></textarea>
+													</div>
+												</div>
+												<div class="form-tabs__center">
+													<div class="form-tabs__location">
+														Ваш город: <a href="#">СПБ</a>
+													</div>
+													<div class="form-tabs__options options">
+														<div class="options__item">
+															<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+															<label for="o_1" class="options__label">
+																<span class="options__text _icon-check">Самовывоз со склада</span>
+															</label>
+														</div>
+														<div class="options__item">
+															<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+															<label for="o_2" class="options__label">
+																<span class="options__text _icon-check">Курьером до адреса</span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-tabs__bottom">
+													<div class="form-tabs__banks">
+														<div class="options-bank__column">
+															<div class="form-tabs__options-bank options-bank options-bank-yellow">
+																<img src="../img/icons/tinkoff-payment.svg" alt>
+																<div class="options-bank__item">
+																	<input hidden id="o_3" class="options-bank__input" checked type="radio" value="3" name="option_2">
+																	<label for="o_3" class="options-bank__label">Кредит</label>
+																</div>
+																<div class="options-bank__item">
+																	<input hidden id="o_4" class="options-bank__input" type="radio" value="4" name="option_2">
+																	<label for="o_4" class="options-bank__label">Рассрочка</label>
+																</div>
+															</div>
+														</div>
+														<div class="options-bank__column">
+															<div class="form-tabs__options-bank options-bank options-bank-green">
+																<img src="../img/icons/sberbank-popup.svg" alt>
+																<div class="options-bank__item">
+																	<input hidden id="o_5" class="options-bank__input" checked type="radio" value="5" name="option_3">
+																	<label for="o_5" class="options-bank__label">Кредит</label>
+																</div>
+																<div class="options-bank__item">
+																	<input hidden id="o_6" class="options-bank__input" type="radio" value="6" name="option_3">
+																	<label for="o_6" class="options-bank__label">Рассрочка</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="basket__buttons">
+														<a href="#" class="basket__button-checkout">Оформить заказ</a>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="tabs__body">
+										<form action="#" class="tabs__form form-tabs">
+											<div class="form-tabs__content">
+												<div class="form-tabs__inputs">
+													<div class="form-tabs__input">
+														<input data-required autocomplete="off" type="text" name="form[]" placeholder="Наименование*">
+													</div>
+													<div class="form-tabs__input">
+														<input data-required autocomplete="off" type="text" name="form[]" placeholder="ИНН*:">
+													</div>
+													<div class="form-tabs__input">
+														<input data-required autocomplete="off" type="text" name="form[]" placeholder="КПП*:">
+													</div>
+													<div class="form-tabs__input">
+														<input data-validate autocomplete="off" type="text" name="form[]" placeholder="E-mail">
+													</div>
+													<div class="form-tabs__input">
+														<textarea placeholder="Примечание:"></textarea>
+													</div>
+												</div>
+												<div class="form-tabs__bottom">
+													<div class="form-tabs__files">
+														<div class="form-tabs__file">
+															<div class="form-tabs__file-inputs">
+																<input class="input-file" multiple type="file" id="input-file-1">
+																<div class="form-tabs__label-file">
+																	<div class="form-tabs__label-icon">
+																		<img src="../img/icons/paperclip.svg" alt>
+																	</div>
+																	<div class="form-tabs__label-text">Прикрепить фаил</div>
+																</div>
+															</div>
+															<div class="form-tabs__items" id="filename-1">
+																<span>Фаил прикреплен:</span>
+															</div>
+														</div>
+													</div>
+													<div class="basket__buttons">
+														<a href="#" class="basket__button-checkout">Оформить заказ</a>
+														<a href="#" class="basket__button-credit">Заявка на лизинг</a>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--ДОБАВИЛ-->
+					</div>
+				</section>
+				<section class="page__basket-coupon basket-coupon">
+					<div class="basket-coupon__container">
+						<div class="basket-coupon__image">
+							<img class="basket-coupon__image-desc" src="../img/basket-coupon.png" alt>
+							<img class="basket-coupon__image-mob" src="../img/coupon-image-mob.png" alt>
+							<div class="basket-coupon__content">
+								<div class="basket-coupon__desc">
+									<div class="basket-coupon__icon _icon-coupon"></div>
+									<div class="basket-coupon__title">Купон на скидку</div>
+									<a href="#" class="basket-coupon__subtitle">Как получить купон?</a>
+								</div>
+								<div class="basket-coupon__buttons">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Ввести код купона">
+									<button class="basket-coupon__button">Применить</button>
+								</div>
+							</div>
+							<div class="basket-coupon__content-mob">
+								<div class="center-product-cart__text">
+									<div class="center-product-cart__desc">
+										<div class="center-product-cart__icon _icon-coupon"></div>
+										<div class="center-product-cart__title">Внимание!</div>
+										<div class="center-product-cart__subtitle">Вы получили купон на скидку.</div>
+									</div>
+									<div class="center-product-cart__buttons">
+										<a href="#" class="center-product-cart__button">Подробнее</a>
+										<input id="inputmob" value="XA/74251" class="center-product-cart__coupon-text">
+										<button id="copymob">Скопировать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			<div class="favorites-comparison">
+				<a href="#" class="favorites-comparison__block">
+					<div class="favorites-comparison__icon _icon-comparison"><span>2</span></div>
+				</a>
+				<a href="#" class="favorites-comparison__block">
+					<div class="favorites-comparison__icon _icon-favorites"><span>3</span></div>
+				</a>
+			</div>
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

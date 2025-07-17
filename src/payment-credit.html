@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Оплата-кредит"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrambs">
+					<div class="breadcrambs__container">
+						<ul>
+							<li><a href="#">Каталог</a></li>
+							<li><span>Оплата</span></li>
+						</ul>
+					</div>
+				</div>
+				<section class="page__payment-credit payment-credit">
+					<div class="payment-credit__container">
+						<div class="payment-credit__title title">Оплата</div>
+						<div class="payment-credit__body">
+							<div class="payment-credit__top top-payment-credit">
+								<div class="top-payment-credit__info">
+									<div class="top-payment-credit__column">
+										<div class="top-payment-credit__item">
+											<div class="top-payment-credit__text">Номер заказа:</div>
+											<div class="top-payment-credit__subtext">174515</div>
+										</div>
+									</div>
+									<span></span>
+									<div class="top-payment-credit__column">
+										<div class="top-payment-credit__item">
+											<div class="top-payment-credit__text">ДАТА заказа:</div>
+											<div class="top-payment-credit__subtext">17.08.22</div>
+										</div>
+									</div>
+									<span></span>
+									<div class="top-payment-credit__column">
+										<div class="top-payment-credit__item">
+											<div class="top-payment-credit__text">ВСЕГО:</div>
+											<div class="top-payment-credit__subtext">42 400 ₽</div>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="top-payment-credit__button">Оформить в кредит</a>
+							</div>
+							<div class="payment-credit__bottom bottom-payment-credit">
+								<div class="bottom-payment-credit__top">
+									<div class="bottom-payment-credit__image">
+										<img src="../img/icons/payment-credit.svg" alt="">
+									</div>
+									<div class="bottom-payment-credit__sum">Сумма заказа: 42 400 ₽</div>
+									<a href="#" class="bottom-payment-credit__button">Оформить в кредит<br><span>от 1177.78 ₽ в месяц</span></a>
+									<div class="bottom-payment-credit__subbutton">от 1177.78 ₽ в месяц</div>
+								</div>
+								<div class="bottom-payment-credit__text">
+									Вы будете перенаправлены на страницу оформления кредита <a href="#">Ознакомьтесь с условиями кредитования</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__application-path application-path">
+					<div class="application-path__container">
+						<div class="application-path__title title">Путь заявки по системе</div>
+						<div class="application-path__body">
+							<div class="application-path__column">
+								<div class="application-path__item">
+									<div class="application-path__number">
+										<span class="application-path__number-one number-one-sberbank _icon-tower">I</span>
+									</div>
+									<div class="application-path__content">
+										<div class="application-path__text">Решение</div>
+										<p>Банк принимает решение
+											по заявке.
+											<br>
+											<br>
+											Вы узнаете решение по смс,
+											e-mail или на экране монитора.
+										</p>
+										<div class="application-path__subtext">(срок ответа до 2 минут)</div>
+									</div>
+								</div>
+							</div>
+							<div class="application-path__column">
+								<div class="application-path__item">
+									<div class="application-path__number">
+										<span class="application-path__number-two number-two-sberbank _icon-treaty">II</span>
+									</div>
+									<div class="application-path__content">
+										<div class="application-path__text">Договор</div>
+										<p>Подпишите договор с банком.
+											<br>
+											<br>
+											Договор может быть подписан через СМС или при встрече с представителем.
+										</p>
+										<div class="application-path__subtext">Для назначения встречи банк свяжется с вами.</div>
+									</div>
+								</div>
+							</div>
+							<div class="application-path__column">
+								<div class="application-path__item">
+									<div class="application-path__number">
+										<span class="application-path__number-three number-three-sberbank _icon-like">III</span>
+									</div>
+									<div class="application-path__content">
+										<div class="application-path__text">Кредит</div>
+										<p>Банк уведомляет магазин
+											о готовности выдать кредит
+											<br>
+											<br>
+											После успешного подписания документов, банк сообщит нам о готовности выдать кредит.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="application-path__column">
+								<div class="application-path__item">
+									<div class="application-path__number-four number-four-sberbank _icon-box">
+										IV
+									</div>
+									<div class="application-path__content">
+										<div class="application-path__text">Товар</div>
+										<p>Вы получаете товар выбранным способом доставки.
+											<br>
+											<br>
+											Магазин подтверждает банку факт выдачи товара и банк предоставляет Вам кредит.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__banner banner">
+					<div class="banner__container">
+						<div class="banner__body">
+							<img class="banner__image" src="../img/banner-2.png" alt="">
+							<img class="banner__image-mob" src="../img/banner-mob-2.png" alt="">
+							<div class="banner__text">
+								<div class="banner__bank">
+									<img src="../img/icons/sberbank.svg" alt="">
+								</div>
+								<div class="banner__title">
+									Линия 24/7
+								</div>
+								<a href="tel:88005550808" class="banner__subtitle">8 (800) 555-08-08</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
