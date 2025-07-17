@@ -1,0 +1,81 @@
+.options {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin: -12px;
+	@media (max-width: $mobile) {
+		width: 100%;
+		flex-direction: column;
+		justify-content: start;
+		margin: -4px 0px;
+	}
+	// .options__item
+	&__item {
+		padding: 12px;
+		position: relative;
+		cursor: pointer;
+		@media (max-width: $mobile) {
+			padding: 4px 0px;
+		}
+	}
+	// .options__input
+	&__input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+		&:checked + .options__label .options__text::before {
+			border: 1px solid rgba(0, 0, 0, 0.19);
+			color: #363c43;
+			box-shadow: 0px 4.7235px 75.57603px 0px rgba(0, 0, 0, 0.25);
+		}
+		&:checked + .options__label {
+			background: #fff;
+			box-shadow: 0px 4.7235px 59.04378px 0px rgba(176, 176, 176, 0.25);
+		}
+	}
+	// .options__label
+	&__label {
+		width: 325px;
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		background: transparent;
+		border-radius: 59.044px;
+		border: 1.181px solid rgba(54, 60, 67, 0.1);
+		padding: 20px 16px 20px 33px;
+		@media (max-width: $mobile) {
+			width: 100%;
+			padding: 10px 14px 10px 28px;
+		}
+	}
+	// .options__text
+	&__text {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		transition: all 0.3s ease 0s;
+		color: #363c43;
+		font-size: 16px;
+		font-weight: 400;
+		&::before {
+			transition: all 0.3s ease 0s;
+			font-size: 24px;
+			color: rgba(54, 60, 67, 0.1);
+			margin: 0px 11px 0px 0px;
+			border-radius: 36.607px;
+			background: transparent;
+			border-radius: 36.607px;
+			padding: 6px;
+			margin: 0px 0px 0px 30px;
+		}
+		@media (max-width: $mobile) {
+			font-size: 12px;
+			&::before {
+				font-size: 21px;
+			}
+		}
+	}
+}
