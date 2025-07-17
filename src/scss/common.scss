@@ -1,0 +1,191 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.title {
+	font-weight: 700;
+	font-size: 55px;
+	line-height: math.div(64, 55);
+	margin: 0px 0px 35px 0px;
+	@media (max-width: $tablet) {
+		font-size: 44px;
+		line-height: math.div(54, 44);
+	}
+	@media (max-width: $mobile) {
+		font-size: 36px;
+		line-height: math.div(40, 36);
+		margin: 0px 0px 25px 0px;
+	}
+	@media (max-width: $mobileSmall) {
+		font-size: 28px;
+		line-height: math.div(33, 28);
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+.breadcrambs {
+	margin: 30px 0px 0px 0px;
+	@media (max-width: $mobileSmall) {
+		margin: 15px 0px 0px 0px;
+	}
+	// .breadcrambs__container
+	&__container {
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			li {
+				&::after {
+					content: "/";
+					color: #363c43;
+					margin: 0px 3px;
+				}
+				a {
+					font-weight: 400;
+					font-size: 15px;
+					line-height: math.div(18, 15);
+				}
+				span {
+					font-weight: 400;
+					font-size: 15px;
+					line-height: math.div(18, 15);
+				}
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			ul {
+				li {
+					a {
+						font-size: 13px;
+					}
+					span {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Добавить/удалить
+
+.popups-page {
+	// .popups-page__content
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			justify-content: start;
+		}
+	}
+	// .popups-page__container
+	&__container {
+	}
+	// .popups-page__body
+	&__body {
+		margin: 30px 0px 0px 0px;
+	}
+	// .popups-page__added-remove
+	&__added-remove {
+		position: relative;
+		background: #ffffff;
+		box-shadow: 0px 10px 50px rgba(54, 60, 66, 0.05);
+		border-radius: 7px;
+		padding: 20px 35px;
+		@media (max-width: $mobileSmall) {
+			display: none;
+		}
+	}
+	// .popups-page__added-remove-mob
+	&__added-remove-mob {
+		display: none;
+		@media (max-width: $mobileSmall) {
+			display: flex;
+			justify-content: center;
+			position: relative;
+			background: #ffffff;
+			box-shadow: 0px 10px 50px rgba(54, 60, 66, 0.05);
+			border-radius: 7px;
+			padding: 20px;
+			margin: 8px 15px;
+			width: 100%;
+		}
+	}
+	// .popups-page__close
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		&::before {
+			font-size: 11px;
+		}
+	}
+	// .popups-page__text
+	&__text {
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: math.div(19, 16);
+		color: #696f77;
+		&::before {
+			width: 35px;
+			height: 35px;
+			background: #ffffff;
+			box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+			padding: 10px;
+			font-size: 18px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			margin: 0px 15px 0px 0px;
+		}
+		span {
+			color: #fd9d08;
+			margin: 0px 0px 0px 3px;
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: 14px;
+			line-height: math.div(16, 14);
+		}
+	}
+	// .popups-page__text-red
+	&__text-red {
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: math.div(19, 16);
+		color: #696f77;
+		&::before {
+			width: 35px;
+			height: 35px;
+			background: #ffffff;
+			box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+			padding: 10px;
+			font-size: 18px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			margin: 0px 15px 0px 0px;
+		}
+		div {
+			span {
+				color: #ff4f37;
+				margin: 0px 0px 0px 3px;
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: 14px;
+			line-height: math.div(16, 14);
+			div {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+.page._basket .popups-page__added-remove-mob {
+	margin: 10px 0px 35px 0px;
+}

@@ -1,0 +1,1052 @@
+.page {
+	// .page__credit-bank
+	&__credit-bank {
+		margin: 35px 0px 90px 0px;
+		@media (max-width: $tablet) {
+			margin: 25px 0px 45px 0px;
+		}
+		@media (max-width: $mobile) {
+			margin: 15px 0px 25px 0px;
+		}
+	}
+	// .page__benefits
+	&__benefits {
+		margin: 0px 0px 60px 0px;
+		@media (max-width: $tablet) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .page__application-form
+	&__application-form {
+		padding: 60px 0px 60px 0px;
+		@media (max-width: $mobile) {
+			padding: 30px 0px 30px 0px;
+		}
+		@media (max-width: $mobileSmall) {
+			padding: 20px 0px 20px 0px;
+		}
+	}
+	// .page__application-path
+	&__application-path {
+		margin: 60px 0px 110px 0px;
+		@media (max-width: $tablet) {
+			margin: 30px 0px 50px 0px;
+		}
+		@media (max-width: $mobile) {
+			margin: 30px 0px 30px 0px;
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//Баннер кредит
+
+.credit-bank {
+	// .credit-bank__container
+	&__container {
+	}
+	// .credit-bank__image
+	&__image {
+		display: flex;
+		position: relative;
+		min-height: 496px;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 15px;
+			object-fit: cover;
+			z-index: -1;
+		}
+		@media (max-width: $tablet) {
+			min-height: 100%;
+		}
+	}
+	// .credit-bank__content
+	&__content {
+		display: flex;
+		align-items: center;
+		padding: 110px 80px;
+		@media (max-width: $pc) {
+			padding: 50px;
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			align-items: start;
+		}
+		@media (max-width: $mobileSmall) {
+			padding: 35px 15px;
+		}
+	}
+	// .credit-bank__desc
+	&__desc {
+		margin: 0px 94px 0px 0px;
+		@media (max-width: $tablet) {
+			margin: 0px 0px 30px 0px;
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	// .credit-bank__title
+	&__title {
+		position: relative;
+		font-weight: 800;
+		font-size: 100px;
+		line-height: math.div(110, 100);
+		margin: 0px 0px 30px 0px;
+		span {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 152px;
+			height: 152px;
+			background: #ffffff;
+			border-radius: 50%;
+			position: relative;
+			left: 0;
+			object-fit: cover;
+			padding: 30px 15px;
+			z-index: 1;
+		}
+		@media (max-width: $pc) {
+			font-size: 80px;
+			line-height: math.div(90, 80);
+			img {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 152px;
+				height: 152px;
+				background: #ffffff;
+				border-radius: 50%;
+				position: relative;
+				left: 0;
+				object-fit: cover;
+				padding: 25px;
+				z-index: 1;
+			}
+		}
+		@media (max-width: $mobile) {
+			font-size: 60px;
+			line-height: math.div(70, 60);
+			margin: 0px 0px 15px 0px;
+			img {
+				width: 100px;
+				height: 100px;
+				background: #ffffff;
+				padding: 15px;
+			}
+		}
+		@media (max-width: 600px) {
+			font-size: 50px;
+			line-height: math.div(60, 50);
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: 40px;
+			line-height: math.div(50, 40);
+			span {
+				justify-content: start;
+			}
+			img {
+				width: 55px;
+				height: 55px;
+				background: #ffffff;
+				padding: 10px;
+				margin: 0px 0px 0px 15px;
+			}
+		}
+		@media (max-width: 400px) {
+			font-size: 34px;
+			line-height: math.div(50, 34);
+		}
+	}
+	// .credit-bank__icon
+	&__icon {
+	}
+	// .credit-bank__subtitle
+	&__subtitle {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: math.div(28, 24);
+		span {
+			&:nth-child(1) {
+				opacity: 0.2;
+				border: 1px solid #363c43;
+				border-radius: 50%;
+				width: 14px;
+				height: 14px;
+				margin: 0px 3px 0px 0px;
+			}
+			&:nth-child(2) {
+				opacity: 0.5;
+				border: 1px solid #363c43;
+				border-radius: 50%;
+				width: 14px;
+				height: 14px;
+				margin: 0px 3px 0px 0px;
+			}
+			&:nth-child(3) {
+				opacity: 0.7;
+				border: 1px solid #363c43;
+				border-radius: 50%;
+				width: 14px;
+				height: 14px;
+				margin: 0px 3px 0px 0px;
+			}
+			&:nth-child(4) {
+				opacity: 1;
+				border: 1px solid #363c43;
+				border-radius: 50%;
+				width: 14px;
+				height: 14px;
+				margin: 0px 10px 0px 0px;
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: 18px;
+			line-height: math.div(24, 18);
+		}
+	}
+	// .credit-bank__column
+	&__column {
+		margin: -23px 0px;
+		@media (max-width: $tablet) {
+			margin: -10px 0px;
+		}
+		@media (max-width: $mobileSmall) {
+			margin: -7px 0px;
+		}
+	}
+	// .credit-bank__text
+	&__text {
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: math.div(28, 24);
+		padding: 23px 0px;
+		&::before {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 62px;
+			height: 62px;
+			font-size: 30px;
+			color: #363c43;
+			background: #ffffff;
+			padding: 16px;
+			border-radius: 50%;
+			margin: 0px 15px 0px 0px;
+		}
+		@media (max-width: $tablet) {
+			padding: 10px 0px;
+		}
+		@media (max-width: $mobile) {
+			font-size: 20px;
+			line-height: math.div(24, 20);
+			&::before {
+				width: 46px;
+				height: 46px;
+				font-size: 24px;
+				padding: 8px;
+				margin: 0px 8px 0px 0px;
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: 16px;
+			line-height: math.div(21, 16);
+			padding: 7px 0px;
+			&::before {
+				width: 35px;
+				height: 35px;
+				font-size: 20px;
+				padding: 8px;
+				margin: 0px 8px 0px 0px;
+			}
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//Преимущества кредитования
+
+.benefits {
+	// .benefits__container
+	&__container {
+	}
+	// .benefits__title
+	&__title {
+	}
+	// .benefits__body
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -30px;
+		@media (max-width: $tablet) {
+			margin: -15px;
+		}
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			margin: -10px 0px;
+		}
+	}
+	// .benefits__column
+	&__column {
+		flex: 0 1 33.3333%;
+		display: flex;
+		align-items: center;
+		padding: 30px;
+		@media (max-width: 1300px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: $tablet) {
+			padding: 15px;
+		}
+		@media (max-width: $mobile) {
+			flex: 0 1 auto;
+			padding: 10px 0px;
+		}
+	}
+	// .benefits__image
+	&__image {
+		width: 160px;
+		height: auto;
+		object-fit: cover;
+		margin: 0px 23px 0px 0px;
+		@media (max-width: $tablet) {
+			width: 130px;
+			height: auto;
+			margin: 0px 15px 0px 0px;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 110px;
+		}
+	}
+	// .benefits__desc
+	&__desc {
+	}
+	// .benefits__text
+	&__text {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: math.div(28, 24);
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $mobileSmall) {
+			font-size: 20px;
+			line-height: math.div(24, 20);
+			margin: 0px 0px 10px 0px;
+		}
+	}
+	// .benefits__subtext
+	&__subtext {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: math.div(18, 15);
+		span {
+			font-weight: 700;
+			font-size: 15px;
+			line-height: math.div(18, 15);
+		}
+		@media (max-width: $tablet) {
+			br {
+				display: none;
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: 12px;
+			line-height: math.div(16, 12);
+			span {
+				font-size: 12px;
+				line-height: math.div(16, 12);
+			}
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//Офрмление заявки
+
+.application-form {
+	// .application-form__container
+	&__container {
+	}
+	// .application-form__title
+	&__title {
+	}
+	// .application-form__body
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -10px -25px;
+		@media (max-width: $pc) {
+			margin: -10px -15px;
+		}
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			margin: -10px 0px;
+		}
+	}
+	// .application-form__column
+	&__column {
+		flex: 0 1 33.3333%;
+		padding: 10px 25px;
+		@media (max-width: $pc) {
+			padding: 10px 15px;
+		}
+		@media (max-width: $tablet) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			padding: 10px 0px;
+		}
+	}
+	// .application-form__item
+	&__item {
+		position: relative;
+		min-height: 663px;
+		@media (max-width: $mobileSmall) {
+			min-height: 463px;
+		}
+	}
+	// .application-form__image
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+		background: #ffffff;
+		border-radius: 15px;
+		box-shadow: 0px 4px 126px rgba(0, 0, 0, 0.06);
+	}
+	// .application-form__number-one
+	&__number-one {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		background: #ffffff;
+		box-shadow: 0px 4px 126px rgba(0, 0, 0, 0.25);
+		width: 98px;
+		height: 98px;
+		font-weight: 500;
+		font-size: 35px;
+		line-height: math.div(41, 35);
+		color: rgba(54, 60, 67, 0.56);
+		border-radius: 50%;
+		z-index: -1;
+		top: 58%;
+		right: 20%;
+		@media (max-width: $mobileSmall) {
+			width: 78px;
+			height: 78px;
+			top: 65%;
+			font-size: 30px;
+			line-height: math.div(35, 30);
+		}
+	}
+	// .application-form__content
+	&__content {
+		padding: 60px 20px 60px 60px;
+		span {
+			font-style: italic;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: math.div(18, 15);
+			margin: 0px 0px 10px 0px;
+		}
+		@media (max-width: $pc) {
+			padding: 60px 30px 60px 30px;
+		}
+		@media (max-width: $mobileSmall) {
+			padding: 40px 30px 40px 30px;
+			span {
+				font-size: 13px;
+				line-height: math.div(15, 13);
+			}
+		}
+	}
+	// .application-form__text
+	&__text {
+		font-weight: 500;
+		font-size: 35px;
+		line-height: math.div(41, 35);
+		color: rgba(54, 60, 67, 0.56);
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $mobileSmall) {
+			font-size: 30px;
+			line-height: math.div(36, 330);
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .application-form__subtext
+	&__subtext {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: math.div(18, 15);
+		margin: 0px 0px 25px 0px;
+		@media (max-width: $mobileSmall) {
+			font-size: 13px;
+			line-height: math.div(15, 13);
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .application-form__button
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #fd9d08;
+		border-radius: 7px;
+		font-weight: 500;
+		font-size: 28px;
+		line-height: math.div(33, 28);
+		text-align: center;
+		color: #ffffff;
+		min-height: 102px;
+		width: 320px;
+		@media (max-width: $pc) {
+			width: 100%;
+		}
+		@media (max-width: $mobile) {
+			min-height: 80px;
+		}
+		@media (max-width: $mobileSmall) {
+			min-height: 60px;
+			font-size: 24px;
+			line-height: math.div(28, 24);
+		}
+	}
+	// .application-form__number-two
+	&__number-two {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		background: #ffffff;
+		box-shadow: 0px 4px 126px rgba(0, 0, 0, 0.25);
+		width: 98px;
+		height: 98px;
+		font-weight: 500;
+		font-size: 35px;
+		line-height: math.div(41, 35);
+		color: rgba(54, 60, 67, 0.56);
+		border-radius: 50%;
+		z-index: -1;
+		top: 55%;
+		left: 60px;
+		@media (max-width: $mobileSmall) {
+			width: 78px;
+			height: 78px;
+			font-size: 30px;
+			line-height: math.div(35, 30);
+		}
+	}
+	// .application-form__number-three
+	&__number-three {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		background: #ffffff;
+		box-shadow: 0px 4px 126px rgba(0, 0, 0, 0.25);
+		width: 98px;
+		height: 98px;
+		font-weight: 500;
+		font-size: 35px;
+		line-height: math.div(41, 35);
+		color: rgba(54, 60, 67, 0.56);
+		border-radius: 50%;
+		z-index: -1;
+		top: 65%;
+		right: 80px;
+		@media (max-width: $mobileSmall) {
+			width: 78px;
+			height: 78px;
+			font-size: 30px;
+			top: 75%;
+			line-height: math.div(35, 30);
+			right: 60px;
+		}
+	}
+	// .application-form__social
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -10px;
+		padding: 15px 0px 0px 0px;
+		@media (max-width: $mobileSmall) {
+			margin: -7px;
+		}
+	}
+	// .application-form__icon
+	&__icon {
+		padding: 10px;
+		@media (max-width: $mobileSmall) {
+			padding: 7px;
+		}
+	}
+	// .application-form__icon-message
+	&__icon-message {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f4f4f4;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		&::before {
+			font-size: 30px;
+			color: #f8ad1c;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 45px;
+			height: 45px;
+			&::before {
+				font-size: 20px;
+			}
+		}
+	}
+	// .application-form__icon-whatsapp
+	&__icon-whatsapp {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f4f4f4;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		&::before {
+			font-size: 30px;
+			color: #4caf50;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 45px;
+			height: 45px;
+			&::before {
+				font-size: 20px;
+			}
+		}
+	}
+	// .application-form__icon-whatsapp-blue
+	&__icon-whatsapp-blue {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f4f4f4;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		&::before {
+			font-size: 30px;
+			color: #5f41e1;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 45px;
+			height: 45px;
+			&::before {
+				font-size: 20px;
+			}
+		}
+	}
+	// .application-form__icon-telegram
+	&__icon-telegram {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f4f4f4;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		&::before {
+			font-size: 30px;
+			color: #039be5;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 45px;
+			height: 45px;
+			&::before {
+				font-size: 20px;
+			}
+		}
+	}
+	// .application-form__icon-social
+	&__icon-social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f4f4f4;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		&::before {
+			content: "";
+			display: block;
+			width: 37px;
+			height: 37px;
+			background: url("../img/icons/form-social.svg") 0 0 no-repeat;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 45px;
+			height: 45px;
+			&::before {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.button-sberbank {
+	background: #4caf50;
+}
+
+//========================================================================================================================================================
+
+//Путь заявки
+
+.application-path {
+	// .application-path__container
+	&__container {
+	}
+	// .application-path__title
+	&__title {
+	}
+	// .application-path__body
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -20px -60px;
+		@media (max-width: $pc) {
+			margin: -20px -30px;
+		}
+		@media (max-width: $mobile) {
+			margin: -20px -20px;
+		}
+		@media (max-width: $mobileSmall) {
+			flex-direction: column;
+			margin: -10px 0px;
+		}
+	}
+	// .application-path__column
+	&__column {
+		flex: 0 1 25%;
+		display: flex;
+		padding: 20px 60px;
+		@media (max-width: $pc) {
+			padding: 20px 30px;
+		}
+		@media (max-width: $tablet) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: $mobile) {
+			padding: 20px 20px;
+		}
+		@media (max-width: $mobileSmall) {
+			flex: 1 1 auto;
+			padding: 10px 0px;
+		}
+	}
+	// .application-path__item
+	&__item {
+	}
+	// .application-path__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		p {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: math.div(21, 18);
+		}
+		@media (max-width: $mobile) {
+			p {
+				font-size: 16px;
+				line-height: math.div(18, 16);
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			p {
+				font-size: 14px;
+				line-height: math.div(16, 14);
+			}
+		}
+	}
+	// .application-path__text
+	&__text {
+		font-weight: 500;
+		font-size: 35px;
+		line-height: math.div(41, 35);
+		margin: 0px 0px 15px 0px;
+		@media (max-width: $mobile) {
+			font-size: 26px;
+			line-height: math.div(31, 26);
+			margin: 0px 0px 10px 0px;
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: 20px;
+			line-height: math.div(26, 20);
+		}
+	}
+	// .application-path__subtext
+	&__subtext {
+		margin: 20px 0px 0px 0px;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: math.div(18, 15);
+		color: #c4c4c4;
+		@media (max-width: $mobile) {
+			font-size: 13px;
+			line-height: math.div(16, 13);
+			margin: 10px 0px 0px 0px;
+		}
+	}
+	// .application-path__number
+	&__number {
+		position: relative;
+		display: flex;
+		margin: 0px 0px 35px 0px;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			display: block;
+			width: 90%;
+			z-index: -1;
+			height: 1px;
+			margin: 0px 0px 0px 115px;
+			border: 0.5px dashed #c4c4c4;
+		}
+		@media (max-width: $pc) {
+			&::after {
+				content: "";
+				width: 75%;
+			}
+		}
+		@media (max-width: $tablet) {
+			&::after {
+				content: "";
+				display: none;
+			}
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $mobileSmall) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+	// .application-path__number-one
+	&__number-one {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #e8e8e8;
+		width: 91px;
+		height: 91px;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: math.div(47, 40);
+		border-radius: 50%;
+		&::before {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			right: -16px;
+			top: 10px;
+			font-size: 22px;
+			color: #ffffff;
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			background: #fd9d08;
+			box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.25);
+		}
+		@media (max-width: $mobileSmall) {
+			width: 71px;
+			height: 71px;
+			font-size: 32px;
+			line-height: math.div(38, 32);
+			&::before {
+				right: -13px;
+				top: 5px;
+				font-size: 14px;
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+	// .application-path__number-two
+	&__number-two {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #e8e8e8;
+		width: 91px;
+		height: 91px;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: math.div(47, 40);
+		border-radius: 50%;
+		&::before {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left: -16px;
+			bottom: 8px;
+			font-size: 22px;
+			color: #ffffff;
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			background: #fd9d08;
+			box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.25);
+		}
+		@media (max-width: $mobileSmall) {
+			width: 71px;
+			height: 71px;
+			font-size: 32px;
+			line-height: math.div(38, 32);
+			&::before {
+				left: -8px;
+				bottom: 4px;
+				font-size: 14px;
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+	// .application-path__number-three
+	&__number-three {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #e8e8e8;
+		width: 91px;
+		height: 91px;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: math.div(47, 40);
+		border-radius: 50%;
+		&::before {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			right: -16px;
+			top: -7px;
+			font-size: 22px;
+			color: #ffffff;
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			background: #fd9d08;
+			box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.25);
+		}
+		@media (max-width: $mobileSmall) {
+			width: 71px;
+			height: 71px;
+			font-size: 32px;
+			line-height: math.div(38, 32);
+			&::before {
+				right: -13px;
+				top: -4px;
+				font-size: 14px;
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+	// .application-path__number-four
+	&__number-four {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #e8e8e8;
+		width: 91px;
+		height: 91px;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: math.div(47, 40);
+		border-radius: 50%;
+		margin: 0px 0px 35px 0px;
+		&::before {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			right: -16px;
+			bottom: 0px;
+			font-size: 24px;
+			color: #ffffff;
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			background: #fd9d08;
+			box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.25);
+		}
+		@media (max-width: $mobile) {
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 71px;
+			height: 71px;
+			font-size: 32px;
+			line-height: math.div(38, 32);
+			margin: 0px 0px 10px 0px;
+			&::before {
+				right: -8px;
+				bottom: 0px;
+				font-size: 16px;
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+}
+
+.number-one-sberbank {
+	&::before {
+		background: #4caf50;
+	}
+}
+
+.number-two-sberbank {
+	&::before {
+		background: #4caf50;
+	}
+}
+
+.number-three-sberbank {
+	&::before {
+		background: #4caf50;
+	}
+}
+
+.number-four-sberbank {
+	&::before {
+		background: #4caf50;
+	}
+}

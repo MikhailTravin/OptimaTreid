@@ -1,0 +1,420 @@
+.page {
+	// .page__coupon-sale
+	&__coupon-sale {
+		margin: 55px 0px;
+		@media (max-width: $mobile) {
+			margin: 30px 0px;
+		}
+	}
+	// .page__about-coupon
+	&__about-coupon {
+		margin: 0px 0px 55px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//Купон на скидку
+
+.coupon-sale {
+	// .coupon-sale__container
+	&__container {
+	}
+	// .coupon-sale__title
+	&__title {
+		padding: 0px 0px 5px 0px;
+	}
+	// .coupon-sale__subtitle
+	&__subtitle {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: math.div(35, 30);
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $mobile) {
+			font-size: 16px;
+			line-height: math.div(19, 16);
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .coupon-sale__content
+	&__content {
+		position: relative;
+		min-height: 496px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@media (max-width: $mobile) {
+			min-height: 650px;
+			justify-content: start;
+		}
+		@media (max-width: $mobileSmall) {
+			min-height: 510px;
+		}
+	}
+	// .coupon-sale__image
+	&__image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+		z-index: 1;
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+	// .coupon-sale__image-mob
+	&__image-mob {
+		display: none;
+		@media (max-width: $mobile) {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 15px;
+			z-index: 1;
+		}
+	}
+	// .coupon-sale__desc
+	&__desc {
+		position: relative;
+		z-index: 3;
+		padding: 66px;
+		button {
+			background: #fd9d08;
+			border-radius: 7px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 35px;
+			margin: 0px 0px 35px 0px;
+			width: 454px;
+			font-weight: 500;
+			font-size: 28px;
+			line-height: math.div(33, 28);
+			text-align: center;
+			color: #ffffff;
+		}
+		@media (max-width: $mobile) {
+			padding: 25px;
+			button {
+				width: 210px;
+				padding: 22px;
+				font-size: 18px;
+				line-height: math.div(21, 18);
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+	// .coupon-sale__coupon
+	&__coupon {
+		background: transparent;
+		font-weight: 800;
+		font-size: 100px;
+		line-height: math.div(80, 100);
+		margin: 0px 0px 35px 0px;
+		@media (max-width: $mobile) {
+			font-size: 35px;
+			line-height: math.div(41, 35);
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .coupon-sale__text
+	&__text {
+		font-weight: 700;
+		font-size: 47px;
+		line-height: math.div(55, 47);
+		a {
+			color: #fd9d08;
+		}
+		@media (max-width: $mobile) {
+			font-size: 20px;
+			line-height: math.div(23, 20);
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//О купоне
+
+.about-coupon {
+	// .about-coupon__container
+	&__container {
+	}
+	// .about-coupon__subtitle
+	&__subtitle {
+		margin: 0px 0px 80px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 35px 0px;
+		}
+	}
+	// .about-coupon__button
+	&__button {
+		background: #fd9d08;
+		border-radius: 7px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 35px;
+		width: 454px;
+		font-weight: 500;
+		font-size: 28px;
+		line-height: math.div(33, 28);
+		text-align: center;
+		color: #ffffff;
+		@media (max-width: $mobileSmall) {
+			display: none;
+		}
+	}
+}
+
+.about-coupon .consumables__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-coupon .consumables__block-one {
+	padding: 0px 0px 50px 0px;
+	margin: -27px -22px;
+	@media (max-width: $mobile) {
+		margin: -5px 0px;
+	}
+	@media (max-width: $mobileSmall) {
+		padding: 0px 0px 0px 0px;
+	}
+}
+
+.about-coupon .block-one-consumables__column {
+	padding: 27px 22px;
+	@media (max-width: $mobile) {
+		padding: 5px 0px;
+	}
+}
+
+.block-one-consumables__text a {
+	color: #fd9d08;
+	font-weight: 600;
+}
+
+//========================================================================================================================================================
+
+//Лизинг купона
+
+.main-leasing-coupon .main-leasing__image {
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}
+
+.main-leasing__image-mob {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+		z-index: 1;
+	}
+}
+
+.main-leasing-coupon .main-leasing__main {
+	margin: 0px 0px 0px 0px;
+	@media (max-width: $mobile) {
+		min-height: 800px;
+		justify-content: start;
+	}
+	@media (max-width: $mobileSmall) {
+		min-height: 480px;
+	}
+}
+
+.main-leasing-coupon .main-leasing__desc {
+	@media (max-width: $mobileSmall) {
+		padding: 25px;
+	}
+}
+
+.main-leasing-coupon .main-leasing__title {
+	@media (max-width: $mobile) {
+		font-size: 55px;
+		margin: 0px 0px 15px 0px;
+	}
+	@media (max-width: $mobileSmall) {
+		font-size: 35px;
+	}
+}
+
+.main-leasing-coupon .main-leasing__subtitle {
+	@media (max-width: $mobile) {
+		margin: 0px 0px 20px 0px;
+	}
+	@media (max-width: $mobileSmall) {
+		span {
+			&:nth-child(1) {
+				display: none;
+			}
+			&:nth-child(2) {
+				width: 10px;
+				height: 10px;
+			}
+			&:nth-child(3) {
+				width: 10px;
+				height: 10px;
+			}
+			&:nth-child(4) {
+				width: 10px;
+				height: 10px;
+			}
+			&:nth-child(5) {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	}
+}
+
+.main-leasing-coupon .main-leasing__text {
+	@media (max-width: $mobile) {
+		font-size: 24px;
+	}
+	@media (max-width: $mobileSmall) {
+		font-size: 20px;
+	}
+}
+
+.main-leasing-coupon {
+	margin: 0px 0px 50px 0px;
+	@media (max-width: $mobile) {
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+.coupon-leasing__subtitle {
+	margin: 0px 0px 55px 0px;
+	@media (max-width: $mobile) {
+		margin: 0px 0px 25px 0px;
+	}
+}
+
+//========================================================================================================================================================
+
+//Банки купона
+
+.credit-bank-coupon {
+	margin: 0px 0px 50px 0px;
+	@media (max-width: $mobile) {
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+.credit-bank-coupon .credit-bank__image {
+	@media (max-width: $mobile) {
+		min-height: 800px;
+	}
+	@media (max-width: $mobileSmall) {
+		min-height: 666px;
+	}
+}
+
+.credit-bank-coupon .credit-bank__content {
+	@media (max-width: $mobileSmall) {
+		padding: 25px;
+	}
+}
+
+.credit-bank-coupon .credit-bank__title {
+	@media (max-width: $mobileSmall) {
+		font-size: 35px;
+		line-height: math.div(41, 35);
+	}
+}
+
+.credit-bank-coupon .credit-bank__subtitle {
+	@media (max-width: $mobileSmall) {
+		font-size: 14px;
+		span {
+			&:nth-child(1) {
+				width: 10px;
+				height: 10px;
+			}
+			&:nth-child(2) {
+				width: 10px;
+				height: 10px;
+			}
+			&:nth-child(3) {
+				width: 10px;
+				height: 10px;
+			}
+			&:nth-child(4) {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	}
+}
+
+.credit-bank-coupon .credit-bank__column {
+	@media (max-width: $mobile) {
+		margin: -13px 0px;
+	}
+}
+
+.credit-bank-coupon .credit-bank__text {
+	@media (max-width: $mobile) {
+		padding: 13px 0px;
+	}
+	@media (max-width: $mobileSmall) {
+		&::before {
+			width: 44px;
+			height: 44px;
+			margin: 0px 15px 0px 0px;
+		}
+	}
+}
+
+.credit-bank {
+	// .credit-bank__img
+	&__img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+		z-index: 1;
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+	// .credit-bank__img-mob
+	&__img-mob {
+		display: none;
+		@media (max-width: $mobile) {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 15px;
+			z-index: 1;
+		}
+	}
+}
